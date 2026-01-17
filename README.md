@@ -35,21 +35,18 @@ Stage II inference produces radiology reports with patient-centric explanations.
 Refer to Appendix for detailed prompt templates for both the stages.
 
 ---
-## CLI Commands
-- Stage-I: python stage1_inference.py \
-  --cfg-path configs/**.yaml \
-  --gpu-id 0 \
-  --projections-csv **.csv \
-  --reports-xlsx **.csv \
-  --image-root <image_root> \
-  --few-shot-file <path_to_prompt> \
-  --instruction "Instruction goes here \
-  --output-file <path_to_output>
 
+## Running Stage I Inference
 
+```
+python stage1_inference.py --cfg-path **.yaml --gpu-id 0 --projections-csv **.csv --reports-xlsx **.csv --image-root <path_to_images> --few-shot-file <path_to_prompt_file> --instruction "Instruction goes here" --output-file <path_to_output_file>
+```
 
+## Running Stage II Inference
 
-
+```
+python med_flamingo_inference.py --llama-path /path/to/llama --image-list <path_to_images> --prompt-file <path_to_prompt_file> --output-file <path_to_output_file>--max-new-tokens <number>
+```
 
 ---
 
