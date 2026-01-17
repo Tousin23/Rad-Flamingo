@@ -35,6 +35,23 @@ Stage II inference produces radiology reports with patient-centric explanations.
 Refer to Appendix for detailed prompt templates for both the stages.
 
 ---
+## CLI Commands
+- Stage-I: python stage1_inference.py \
+  --cfg-path configs/**.yaml \
+  --gpu-id 0 \
+  --projections-csv **.csv \
+  --reports-xlsx **.csv \
+  --image-root <image_root> \
+  --few-shot-file <path_to_prompt> \
+  --instruction "Instruction goes here \
+  --output-file <path_to_output>
+
+
+
+
+
+
+---
 
 ## Acknowledgement
 This work is heavily inspired by the previous works of [XrayGPT](https://github.com/mbzuai-oryx/XrayGPT), [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) and [FEB](https://github.com/allenai/feb)
