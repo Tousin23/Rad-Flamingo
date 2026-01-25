@@ -51,4 +51,4 @@ python med_flamingo_inference.py --llama-path /path/to/llama --image-list <path_
 ---
 
 ## Acknowledgement
-This work is heavily inspired by the previous works of [XrayGPT](https://github.com/mbzuai-oryx/XrayGPT), [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) and [FEB](https://github.com/allenai/feb)
+This work is draws inspiration from [XrayGPT](https://github.com/mbzuai-oryx/XrayGPT), [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) and [FEB](https://github.com/allenai/feb)
